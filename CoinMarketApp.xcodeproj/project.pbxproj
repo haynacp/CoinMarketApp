@@ -6,20 +6,89 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		E0650B9C2F4F279E0053CFF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E01AE19D2F4CA14700483302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01AE1A42F4CA14700483302;
+			remoteInfo = CoinMarketApp;
+		};
+		E0650BB02F4F28400053CFF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E01AE19D2F4CA14700483302 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E01AE1A42F4CA14700483302;
+			remoteInfo = CoinMarketApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		E01AE1A52F4CA14700483302 /* CoinMarketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinMarketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0650B982F4F279E0053CFF9 /* CoinMarketAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinMarketAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0650BAA2F4F28400053CFF9 /* CoinMarketAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinMarketAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		E01AE2162F4CB85900483302 /* Exceptions for "CoinMarketApp" folder in "CoinMarketApp" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = E01AE1A42F4CA14700483302 /* CoinMarketApp */;
+		};
+		E0650BB82F4F28FE0053CFF9 /* Exceptions for "CoinMarketAppTests" folder in "CoinMarketAppTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/TestConfiguration.swift,
+				Mocks/MockCoinMarketCapService.swift,
+				ServiceTests/CoinMarketCapServiceTests.swift,
+				ViewModelTests/ExchangeDetailViewModelTests.swift,
+			);
+			target = E0650B972F4F279E0053CFF9 /* CoinMarketAppTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		E01AE1A72F4CA14700483302 /* CoinMarketApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E01AE2162F4CB85900483302 /* Exceptions for "CoinMarketApp" folder in "CoinMarketApp" target */,
+			);
 			path = CoinMarketApp;
+			sourceTree = "<group>";
+		};
+		E0650B992F4F279E0053CFF9 /* CoinMarketAppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				E0650BB82F4F28FE0053CFF9 /* Exceptions for "CoinMarketAppTests" folder in "CoinMarketAppTests" target */,
+			);
+			path = CoinMarketAppTests;
+			sourceTree = "<group>";
+		};
+		E0650BAB2F4F28400053CFF9 /* CoinMarketAppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = CoinMarketAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E01AE1A22F4CA14700483302 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0650B952F4F279E0053CFF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0650BA72F4F28400053CFF9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				E01AE1A72F4CA14700483302 /* CoinMarketApp */,
+				E0650B992F4F279E0053CFF9 /* CoinMarketAppTests */,
+				E0650BAB2F4F28400053CFF9 /* CoinMarketAppUITests */,
 				E01AE1A62F4CA14700483302 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				E01AE1A52F4CA14700483302 /* CoinMarketApp.app */,
+				E0650B982F4F279E0053CFF9 /* CoinMarketAppTests.xctest */,
+				E0650BAA2F4F28400053CFF9 /* CoinMarketAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +143,52 @@
 			productReference = E01AE1A52F4CA14700483302 /* CoinMarketApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E0650B972F4F279E0053CFF9 /* CoinMarketAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0650B9E2F4F279E0053CFF9 /* Build configuration list for PBXNativeTarget "CoinMarketAppTests" */;
+			buildPhases = (
+				E0650B942F4F279E0053CFF9 /* Sources */,
+				E0650B952F4F279E0053CFF9 /* Frameworks */,
+				E0650B962F4F279E0053CFF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0650B9D2F4F279E0053CFF9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E0650B992F4F279E0053CFF9 /* CoinMarketAppTests */,
+			);
+			name = CoinMarketAppTests;
+			packageProductDependencies = (
+			);
+			productName = CoinMarketAppTests;
+			productReference = E0650B982F4F279E0053CFF9 /* CoinMarketAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E0650BA92F4F28400053CFF9 /* CoinMarketAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E0650BB22F4F28400053CFF9 /* Build configuration list for PBXNativeTarget "CoinMarketAppUITests" */;
+			buildPhases = (
+				E0650BA62F4F28400053CFF9 /* Sources */,
+				E0650BA72F4F28400053CFF9 /* Frameworks */,
+				E0650BA82F4F28400053CFF9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0650BB12F4F28400053CFF9 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				E0650BAB2F4F28400053CFF9 /* CoinMarketAppUITests */,
+			);
+			name = CoinMarketAppUITests;
+			packageProductDependencies = (
+			);
+			productName = CoinMarketAppUITests;
+			productReference = E0650BAA2F4F28400053CFF9 /* CoinMarketAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +201,14 @@
 				TargetAttributes = {
 					E01AE1A42F4CA14700483302 = {
 						CreatedOnToolsVersion = 26.2;
+					};
+					E0650B972F4F279E0053CFF9 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = E01AE1A42F4CA14700483302;
+					};
+					E0650BA92F4F28400053CFF9 = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = E01AE1A42F4CA14700483302;
 					};
 				};
 			};
@@ -100,12 +227,28 @@
 			projectRoot = "";
 			targets = (
 				E01AE1A42F4CA14700483302 /* CoinMarketApp */,
+				E0650B972F4F279E0053CFF9 /* CoinMarketAppTests */,
+				E0650BA92F4F28400053CFF9 /* CoinMarketAppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E01AE1A32F4CA14700483302 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0650B962F4F279E0053CFF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0650BA82F4F28400053CFF9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +265,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E0650B942F4F279E0053CFF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E0650BA62F4F28400053CFF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0650B9D2F4F279E0053CFF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E01AE1A42F4CA14700483302 /* CoinMarketApp */;
+			targetProxy = E0650B9C2F4F279E0053CFF9 /* PBXContainerItemProxy */;
+		};
+		E0650BB12F4F28400053CFF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E01AE1A42F4CA14700483302 /* CoinMarketApp */;
+			targetProxy = E0650BB02F4F28400053CFF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E01AE1AE2F4CA14800483302 /* Debug */ = {
@@ -254,6 +424,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinMarketApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Coin Market";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -274,13 +446,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.2;
 			};
 			name = Debug;
@@ -298,6 +471,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CoinMarketApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Coin Market";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -318,14 +493,119 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 26.2;
+			};
+			name = Release;
+		};
+		E0650B9F2F4F279E0053CFF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38BWSYMPAW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haynacardoso.CoinMarketAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinMarketApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinMarketApp";
+			};
+			name = Debug;
+		};
+		E0650BA02F4F279E0053CFF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38BWSYMPAW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haynacardoso.CoinMarketAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinMarketApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CoinMarketApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E0650BB32F4F28400053CFF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38BWSYMPAW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haynacardoso.CoinMarketAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinMarketApp;
+			};
+			name = Debug;
+		};
+		E0650BB42F4F28400053CFF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38BWSYMPAW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = haynacardoso.CoinMarketAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinMarketApp;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -346,6 +626,24 @@
 			buildConfigurations = (
 				E01AE1B12F4CA14800483302 /* Debug */,
 				E01AE1B22F4CA14800483302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0650B9E2F4F279E0053CFF9 /* Build configuration list for PBXNativeTarget "CoinMarketAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0650B9F2F4F279E0053CFF9 /* Debug */,
+				E0650BA02F4F279E0053CFF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E0650BB22F4F28400053CFF9 /* Build configuration list for PBXNativeTarget "CoinMarketAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0650BB32F4F28400053CFF9 /* Debug */,
+				E0650BB42F4F28400053CFF9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

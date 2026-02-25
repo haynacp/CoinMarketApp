@@ -7,7 +7,35 @@
 		<key>CoinMarketApp.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>CoinMarketAppTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>CoinMarketAppUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E01AE1A42F4CA14700483302</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0650B972F4F279E0053CFF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0650BA92F4F28400053CFF9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

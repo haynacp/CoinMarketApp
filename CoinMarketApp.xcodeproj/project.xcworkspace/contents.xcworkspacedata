@@ -4,4 +4,25 @@
    <FileRef
       location = "self:">
    </FileRef>
+   <FileRef
+      location = "group:MVVM-C_PROPOSTA.md">
+   </FileRef>
+   <FileRef
+      location = "group:Coordinator.swift">
+   </FileRef>
+   <FileRef
+      location = "group:AppCoordinator.swift">
+   </FileRef>
+   <FileRef
+      location = "group:AppContainer.swift">
+   </FileRef>
+   <FileRef
+      location = "group:ExchangeRepository.swift">
+   </FileRef>
+   <FileRef
+      location = "group:FetchExchangesUseCase.swift">
+   </FileRef>
+   <FileRef
+      location = "group:FetchExchangeDetailUseCase.swift">
+   </FileRef>
 </Workspace>
